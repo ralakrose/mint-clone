@@ -4,87 +4,137 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Mint.com-Odin Project</title>
   </head>
   <body>
     <!--Page Header-->
-    <div class="page-header"></div>
-    <div class="signup-area">
+    <div class="nav-wrapper">
+      <div class="nav-bar-container">
+        <ul class="navbar-columns">
+            <li>
+        <div class="nav-bar-column">
+            
+         <div>Already have an account?</div>
+          <span class="forgot-password">I forgot my User ID or Password</span>
+        </div>
+        </li>
+        <li>
+        <div class="nav-bar-btn-column">
+          <button class="signin-button"><i class="fa fa-lock" id="lock-icon"></i><span class="signin-btn-text">Sign In
+          </span></button>
+        </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-header">
+      <header>
+        <!--image logo-->
+        <div class="logo-image"><img src="logo.png" alt=""></div>
+      </header>
+    </div>
+    <div class="signup-container">
       <!--Sign up area section-->
       <section>
         <!--Wrapper for the sign up details-->
-        <div class="wrapper">
+        <div class="signup-wrapper">
           <!--Wrapper header-->
           <div class="wrapper-header">
-            <span>Create an Intuit account</span>
-            <span>One account for everything Intuit, including Mint.</span>
-            <a href="">Learn more.</a>
+            <header class="signup-header">
+              <span class="create-account-text">Create an Intuit account</span
+              ><br />
+              <span class="account-for-everything-text"
+                >One account for everything Intuit, including Mint.</span
+              ><br />
+              <a href="" class="learn-more-link">Learn more.</a>
+            </header>
           </div>
           <!--Sign up form-->
-          <fieldset>
-            <label for="">
-              Email
-            </label>
+          <fieldset class="fieldset">
+            <div class="labels">
+              <label for="" class="email-label">
+                Email
+              </label>
+            </div>
             <div class="input-container">
               <input type="text" id="email" class="email" />
             </div>
           </fieldset>
-          <fieldset>
-            <label for="">
-              Phone(recommended)
-            </label>
+          <fieldset class="fieldset">
+            <div class="labels">
+              <label for="" class="phone-label">
+                Phone(recommended)
+              </label>
+            </div>
             <div class="input-container">
-              <input type="number" id="phone" class="phone" />
-              <span class="tiny-text"
+              <input type="text" id="phone" class="phone" /><br />
+            </div>
+            <div class="tiny-text">
+              <span class="standard-call"
                 >Standard call, messaging or data rates may apply.</span
               >
             </div>
           </fieldset>
-          <fieldset>
-            <label for="">
-              Password
-            </label>
+          <fieldset class="fieldset">
+            <div class="labels">
+              <label for="" class="password-label">
+                Password
+              </label>
+            </div>
             <div class="input-container">
-              <input type="password" id="password" class="password" />
+              <input type="password" id="password" class="password" /><i class="fa fa-unlock" aria-hidden="true" id="unlock-icon"></i>
+              
             </div>
           </fieldset>
           <!--Create Account Button-->
           <div class="button-area">
-            <button class="create-account">Create Account</button>
+            <button class="create-account">
+              <i class="fa fa-lock" id="lock-icon"></i> Create Account
+            </button>
           </div>
           <!--Wrapper footer with Terms of use text-->
           <div class="wrapper-footer">
-            <span id="terms-of-use">
-              By clicking Create Account, you agree to our
-              <br />
-              <a href="" id="terms">Terms</a>
-              <span>"and have read and acknowledged our"</span>
-              <a href="Privacy Statement" id="privacy-statement"
-                >Privacy Statement</a
-              >
-            </span>
+            <footer>
+              <span id="terms-of-use">
+                By clicking Create Account, you agree to our
+                <br />
+                <a href="" id="terms">Terms</a>
+                <span>and have read and acknowledged our</span>
+                <a href="Privacy Statement" id="privacy-statement"
+                  >Privacy <br />
+                  Statement.</a
+                >
+              </span>
+            </footer>
           </div>
+        <!--Captcha section-->
+          
+          </section>
+        <section class="captcha" id="captcha">
+            <!--Captcha reCAPTCHA text area-->
+            <div class="captcha-text-area">
+                <span id="captcha-text">
+                    Invisible reCAPTCHA by Google <a href="">Privacy Policy</a> and
+                    <a href="">Terms of use.</a>
+                </span>
+            </div>
         </div>
       </section>
-      <!--Captcha section-->
-      <section class="captcha" id="captcha">
-        <!--Captcha reCAPTCHA text area-->
-        <div class="captcha-text-area">
-          <span id="captcha-text">
-            Invisible reCAPTCHA by Google <a href="">Privacy Policy</a> and
-            <a href="">Terms of use.</a>
-          </span>
-        </div>
-      </section>
+     
     </div>
     <!--Page footer-->
     <div class="page-footer">
       <!--Footer links-->
       <div class="footer-links">
         <ul class="legal-privacy-security">
-          <li><a href="#">Legal</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Security</a></li>
+            <li>Legal</li>
+            <li>Privacy</li>
+          <li>Security</li>
         </ul>
       </div>
       <!--Copyright text-->
@@ -97,9 +147,10 @@
         </span>
       </div>
       <!--Privacy Settings Button-->
-      <div class="privacy-settings">
-        <button class="btn-privacy-settings">Privacy Settings</button>
-      </div>
+      
+    </div>
+    <div class="privacy-settings" role="button">
+        Privacy Settings
     </div>
   </body>
 </html>
